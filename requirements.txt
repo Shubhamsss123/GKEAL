@@ -1,0 +1,4 @@
+torchvision
+scikit-learn
+pyyaml
+tqdm

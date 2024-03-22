@@ -198,7 +198,7 @@ _il_group.add_argument(
 _il_group.add_argument(
     "--sigma",
     default=10,
-    type=float,
+    type=float, 
     help="The width-adjusting of the Gaussian kernel (GKEAL only)",
 )
 
@@ -231,7 +231,8 @@ def load_args() -> Dict[str, Any]:
     if args["IL_batch_size"] is None:
         args["IL_batch_size"] = args["batch_size"]
 
-    saving_root = path.join(saving_root, datetime.now().isoformat(timespec="seconds"))
+    #saving_root = path.join(saving_root, datetime.now().isoformat(timespec="seconds"))
+    
     args["saving_root"] = saving_root
     args["argv"] = str(argv)
     makedirs(saving_root, exist_ok=True)
